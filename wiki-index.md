@@ -1,29 +1,41 @@
-# Index — Production AI Guardrails
+# Wiki Index
 
-A wiki for A senior-engineer deep-dive into protecting agentic LLM applications — threat modeling, inline guardrail evaluation, and production deployment patterns — using the open-source guard-demo-client (FastAPI + React + Lakera Guard) as the running case study.. Pages cite raw sources under `raw/`.
+Cited knowledge pages for the *Production AI Guardrails* course. Every page
+lives in `wiki/` and ends with a `Changelog`. Sources are captured verbatim
+in `raw/`.
 
-## Concepts
-_(populated during ingest)_
+## Concepts (foundations)
 
-## Features
-_(populated during ingest)_
+- [[concept:llm-failure-modes]] — Why LLM apps fail differently
+- [[concept:agentic-threat-surface]] — Threat surface of an agentic LLM system
+- [[concept:detector-eval]] — Detector evaluation methodology
 
-## Patterns
-_(populated during ingest)_
+## Attacks
 
-## Tools
-_(populated during ingest)_
+- [[attack:prompt-injection-direct]] — Direct prompt injection
+- [[attack:prompt-injection-indirect]] — Indirect prompt injection
+- [[attack:jailbreak]] — Jailbreak attacks
+- [[attack:pii-extraction]] — PII and secret extraction
+- [[attack:tool-abuse]] — Tool & agent abuse
+- [[attack:rag-poisoning]] — RAG poisoning
+- [[attack:data-exfiltration]] — Data exfiltration channels
 
-## Decisions
-_(populated during ingest)_
+## Detectors
+
+- [[detector:lakera-guard]] — Lakera Guard detector classes
+
+## Deployment patterns
+
+- [[pattern:inline-blocking-guard]] — Inline blocking guardrail
+- [[pattern:proxy-guardrail]] — Proxy-native guardrail (LiteLLM)
+- [[pattern:async-monitoring]] — Async monitoring (post-hoc scanning)
 
 ## Training portal
 
-- [Portal home](index.html) — bilingual landing page
+- [Portal home](index.html) — landing page
 - [Self-paced course (EN)](course-en.html) — long-form
-- [Self-paced course (TH)](course-th.html) — long-form
+- [Slide deck (EN)](slides/training-en.html) — workshop format
 
-## Slides
+## Sources
 
-- [English deck](slides/training-en.html)
-- [Thai deck](slides/training-th.html)
+14 primary sources captured in `raw/`. See SCHEMA.md §7 for redaction rules.

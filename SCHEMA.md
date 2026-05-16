@@ -13,9 +13,10 @@ Edit this table to fit your domain. Keep the type set small and stable.
 | type | id pattern | gets its own page? | notes |
 |---|---|---|---|
 | `concept` | `concept:<kebab>` | yes | core ideas, definitions, mental models |
-| `feature` | `feature:<kebab>` | yes | concrete features / capabilities |
-| `pattern` | `pattern:<kebab>` | yes | reusable patterns, workflows |
-| `tool` | `tool:<name>` | yes | tooling specific to your domain |
+| `attack` | `attack:<kebab>` | yes | named attack class (e.g. `attack:prompt-injection-direct`) — the unit threat models reason about |
+| `detector` | `detector:<kebab>` | yes | a specific detector mechanism (e.g. `detector:lakera-prompt-attack`) |
+| `pattern` | `pattern:<kebab>` | yes | reusable patterns (e.g. `pattern:inline-blocking-guard`) |
+| `tool` | `tool:<name>` | yes | concrete tools / products (Lakera, LiteLLM, Presidio, etc.) |
 | `decision` | `decision:<date>-<slug>` | yes | ADRs / authoritative decisions |
 | `source` | `source:<kebab>` | no | reference only — links from raw/ |
 
@@ -29,6 +30,9 @@ Edit this table to fit your domain. Keep the type set small and stable.
 - `supersedes` — new claim/decision replaces older one (old stays, marked stale)
 - `contradicts` — flagged for Lint to resolve
 - `cites` — A draws evidence from source B
+- `detects` — detector D detects attack A (typed: `detector → attack`)
+- `mitigates` — pattern P mitigates attack A (typed: `pattern → attack`)
+- `enables` — vector V enables attack A (e.g. unfurling enables exfil)
 
 ## 4. Page rules
 

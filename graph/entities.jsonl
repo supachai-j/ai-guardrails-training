@@ -1,0 +1,14 @@
+{"id": "concept:llm-failure-modes", "type": "concept", "title": "Why LLM apps fail differently", "confidence": 0.7}
+{"id": "concept:agentic-threat-surface", "type": "concept", "title": "Threat surface of an agentic LLM system", "confidence": 0.7}
+{"id": "concept:detector-eval", "type": "concept", "title": "Detector evaluation methodology", "confidence": 0.7}
+{"id": "attack:prompt-injection-direct", "type": "attack", "title": "Direct prompt injection", "confidence": 0.8}
+{"id": "attack:prompt-injection-indirect", "type": "attack", "title": "Indirect prompt injection", "confidence": 0.8}
+{"id": "attack:jailbreak", "type": "attack", "title": "Jailbreak attacks", "confidence": 0.7}
+{"id": "attack:pii-extraction", "type": "attack", "title": "PII and secret extraction", "confidence": 0.7}
+{"id": "attack:tool-abuse", "type": "attack", "title": "Tool & agent abuse", "confidence": 0.7}
+{"id": "attack:rag-poisoning", "type": "attack", "title": "RAG poisoning", "confidence": 0.7}
+{"id": "attack:data-exfiltration", "type": "attack", "title": "Data exfiltration channels", "confidence": 0.7}
+{"id": "detector:lakera-guard", "type": "detector", "title": "Lakera Guard detector classes", "confidence": 0.8}
+{"id": "pattern:inline-blocking-guard", "type": "pattern", "title": "Inline blocking guardrail", "confidence": 0.8}
+{"id": "pattern:proxy-guardrail", "type": "pattern", "title": "Proxy-native guardrail", "confidence": 0.7}
+{"id": "pattern:async-monitoring", "type": "pattern", "title": "Async monitoring (post-hoc scanning)", "confidence": 0.6}

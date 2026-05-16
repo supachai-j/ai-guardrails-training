@@ -234,10 +234,9 @@
   <h1>Production AI Guardrails</h1>
   <p class="lede">Threat modeling, detector design, and deployment patterns for agentic LLM apps<br/><span style="color:var(--muted-2)">Threat modeling, detector design และ deployment patterns สำหรับ agentic LLM apps</span></p>
   <div class="ctas">
-    <a class="btn primary" href="course-en.html">Start course (EN) <span>→</span></a>
-    <a class="btn ghost" href="course-th.html">เริ่มหลักสูตร (TH)</a>
-    <a class="btn ghost" href="slides/training-en.html">Slides (EN)</a>
-    <a class="btn ghost" href="slides/training-th.html">สไลด์ (TH)</a>
+    <a class="btn primary" href="course-en.html">Start course <span>→</span></a>
+    <a class="btn ghost" href="slides/training-en.html">Workshop slides</a>
+    <a class="btn ghost" href="wiki-index.md">Browse the wiki</a>
   </div>
 </section>
 
@@ -246,36 +245,35 @@
   <h2 class="section-title">Pillars of this training</h2>
   <p class="section-th">หลักการสำคัญของหลักสูตร</p>
   <div class="features">
-    <!-- TODO: replace these with your actual pillars -->
-    <div class="feature">
-      <div class="ico">📐</div>
-      <h3>Pillar one</h3>
-      <p>Short description of the first thing learners will master.</p>
-    </div>
-    <div class="feature">
-      <div class="ico">🪜</div>
-      <h3>Pillar two</h3>
-      <p>Short description of the second thing learners will master.</p>
-    </div>
-    <div class="feature">
-      <div class="ico">🌐</div>
-      <h3>Pillar three</h3>
-      <p>Short description of the third thing learners will master.</p>
-    </div>
-    <div class="feature">
-      <div class="ico">🧭</div>
-      <h3>Pillar four</h3>
-      <p>Short description of the fourth thing learners will master.</p>
-    </div>
     <div class="feature">
       <div class="ico">🎯</div>
-      <h3>Pillar five</h3>
-      <p>Short description of the fifth thing learners will master.</p>
+      <h3>Five-axis threat model</h3>
+      <p>STRIDE-style decomposition for agentic systems — input, output, tool surface, RAG retrieval, agent loop. One row per axis before any defense code.</p>
     </div>
     <div class="feature">
-      <div class="ico">🛡️</div>
-      <h3>Pillar six</h3>
-      <p>Short description of the sixth thing learners will master.</p>
+      <div class="ico">💉</div>
+      <h3>Prompt injection (direct &amp; indirect)</h3>
+      <p>Why the model can't tell instructions from data, how Greshake's indirect attack class works, and what detectors actually catch.</p>
+    </div>
+    <div class="feature">
+      <div class="ico">🔐</div>
+      <h3>PII, tool abuse, RAG poisoning</h3>
+      <p>The other three concrete attack classes. Each with hands-on labs against the worked example.</p>
+    </div>
+    <div class="feature">
+      <div class="ico">📊</div>
+      <h3>Detector eval methodology</h3>
+      <p>Build your own harness — labelled dataset, FP/FN cost matrix, latency budget. Vendor claims don't survive contact with your traffic.</p>
+    </div>
+    <div class="feature">
+      <div class="ico">🚀</div>
+      <h3>Three deployment patterns</h3>
+      <p>Inline blocking, proxy-native (LiteLLM), async monitoring. Pick by latency, coverage, and operational appetite.</p>
+    </div>
+    <div class="feature">
+      <div class="ico">📈</div>
+      <h3>Observability for SecOps</h3>
+      <p>What to log from monitor mode, how to triage flagged-but-allowed events, and how the telemetry feeds back into detector improvement.</p>
     </div>
   </div>
 </section>
@@ -286,28 +284,28 @@
   <p class="section-th">เลือกฟอร์แมตที่เหมาะกับคุณ</p>
   <div class="start-grid">
     <a class="start-card" href="course-en.html">
-      <span class="lang">EN · self-paced</span>
-      <h3>Self-paced course (English)</h3>
-      <p>Read at your own pace. Sticky-sidebar TOC, citation-backed claims.</p>
+      <span class="lang">Self-paced</span>
+      <h3>Self-paced course</h3>
+      <p>12 modules. Read at your own pace. Sticky-sidebar TOC, citation-backed claims. ~25k words.</p>
       <div class="arrow">Start reading →</div>
     </a>
-    <a class="start-card" href="course-th.html">
-      <span class="lang alt">TH · อ่านเอง</span>
-      <h3>หลักสูตรอ่านเอง (ภาษาไทย)</h3>
-      <p>อ่านได้ตามจังหวะของคุณเอง · TOC ติดด้านข้าง · มี citation ครบ</p>
-      <div class="arrow">เริ่มอ่าน →</div>
-    </a>
     <a class="start-card" href="slides/training-en.html">
-      <span class="lang">EN deck</span>
-      <h3>Slides — instructor-led (English)</h3>
-      <p>Reveal.js deck for live training sessions. Same outline, condensed for ~60-90 min.</p>
+      <span class="lang alt">Workshop deck</span>
+      <h3>Slides — instructor-led</h3>
+      <p>Reveal.js deck for live training. Half-day workshop format. Same outline, condensed.</p>
       <div class="arrow">Open slides →</div>
     </a>
-    <a class="start-card" href="slides/training-th.html">
-      <span class="lang alt">TH deck</span>
-      <h3>สไลด์สำหรับสอนสด (ภาษาไทย)</h3>
-      <p>สไลด์ reveal.js สำหรับสอนสด โครงเดียวกับ EN ย่นเนื้อหาให้กระชับสำหรับ 60-90 นาที</p>
-      <div class="arrow">เปิดสไลด์ →</div>
+    <a class="start-card" href="wiki-index.md">
+      <span class="lang">Wiki</span>
+      <h3>Cited knowledge base</h3>
+      <p>14 wiki pages — every claim in the course traces back here, with source citations.</p>
+      <div class="arrow">Browse the wiki →</div>
+    </a>
+    <a class="start-card" href="https://github.com/supachai-j/guard-demo-client">
+      <span class="lang alt">Codebase</span>
+      <h3>guard-demo-client</h3>
+      <p>The worked example: FastAPI + React + ReAct agent + Lakera Guard. Clone, run, attack, defend.</p>
+      <div class="arrow">Open on GitHub →</div>
     </a>
   </div>
 </section>
@@ -316,21 +314,20 @@
   <h2>Ready to dive in?</h2>
   <p>Open in your browser · No signup · No setup</p>
   <div class="ctas">
-    <a class="btn primary" href="course-en.html">Begin in English →</a>
-    <a class="btn ghost" href="course-th.html">เริ่มภาษาไทย</a>
+    <a class="btn primary" href="course-en.html">Begin the course →</a>
+    <a class="btn ghost" href="slides/training-en.html">Open the deck</a>
   </div>
 </section>
 
 <footer>
   <div class="links">
-    <a href="course-en.html">Course (EN)</a>
-    <a href="course-th.html">Course (TH)</a>
-    <a href="slides/training-en.html">Slides (EN)</a>
-    <a href="slides/training-th.html">Slides (TH)</a>
+    <a href="course-en.html">Course</a>
+    <a href="slides/training-en.html">Slides</a>
     <a href="wiki-index.md">Wiki</a>
-    <a href="https://github.com/supachai-j/ai-guardrails-training">GitHub ↗</a>
+    <a href="https://github.com/supachai-j/ai-guardrails-training">Source ↗</a>
+    <a href="https://github.com/supachai-j/guard-demo-client">guard-demo-client ↗</a>
   </div>
-  <div>Production AI Guardrails · by Supachai-ja</div>
+  <div>Production AI Guardrails · by Supachai-ja · TH version deferred</div>
 </footer>
 
 <script>
